@@ -27,11 +27,8 @@
     <div class="gambar-konten">
         <div class="overlay">
             <div class="pos">
-                <h1 class="heading">GROW<br>
-                    WITH US</h1>
-                <p class="para">Make a good farm and garden with our ecyclopedia,<br>
-                    The encyclopedia itself from farmer & gardener <br> for
-                    farmer & gardener</p>
+                <h1 class="heading">DIAGNOSE<br>
+                    WITH US</h1><br>
                 <h1 class="cover" onclick="scrollwin()"><a href="#">GET STARTED</a></h1>
             </div>
         </div>
