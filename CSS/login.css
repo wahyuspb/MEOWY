@@ -1,0 +1,212 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.65;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.left-content {
+    flex: 3;
+    background: url(../Gambar/meow1.jpg);
+    background-size: cover;
+    background-position: 60% 40%;
+    box-shadow: inset -100px 100px 100px rgba(0, 0, 0, .7);
+}
+
+.text{
+    text-align: right;
+    margin-right: 3%;
+    margin-left: 40%;
+    margin-top: 5%;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .11);
+    font-size: 130%;
+}
+
+
+
+
+.right-content {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background: #e9e9e9;
+}
+
+.content{
+    margin-top: 10%;
+}
+
+h3 {
+
+    size: 32px;
+}
+
+.facebook,
+.google {
+    width: 250px;
+    height: 40px;
+    margin: 5px;
+}
+
+.facebook {
+    color: #ffffff;
+    background: #4267B2;
+    border: none;
+    outline: none;
+}
+
+.facebook:hover {
+    background: #365697;
+    cursor: pointer;
+}
+
+.google {
+    background: #DD4B39;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.google:hover {
+    background: #c24332;
+    cursor: pointer;
+}
+
+.or {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(139, 139, 139);
+    line-height: 0.1em;
+    margin: 5% 0 10%;
+    color: rgb(134, 134, 134);
+    
+}
+
+.or span {
+    background: #e9e9e9;
+    padding: 0 10px;
+}
+
+.username,
+.password {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.Login{
+    width: 60%;
+    padding: 9px 20px;
+    font-weight: bold;
+    margin-top: 5%;
+    background: #cfcfcf;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+
+.Login:hover{
+    background: #a7a7a7;
+    cursor: pointer;
+}
+
+.Signup{
+    margin-top: 8%;
+    width: 45%;
+    padding: 2px 20px;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #0394D2;
+}
+
+/*.left-countainer{
+    float: left;
+    width: 70%;
+    height: 100%;
+    background: url(../Gambar/meow1.jpg);
+    background-size: cover;
+    background-position: 60% 40%;
+    box-shadow: inset -100px 100px 100px rgba(0, 0, 0, .7);  
+}
+
+.right-container{
+    display: flex;
+    background: #e9e9e9;
+    max-width: 30%;
+    height: 100%;
+}
+
+.atas{
+    height: 25%;
+    margin-left: 23%;
+    margin-top: 20%;
+    max-width: 100%;
+}
+
+.bawah{
+    height: 75%;
+    width: 100%;
+}
+
+
+
+.facebook,.google{
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.facebook{
+    color: #ffffff;
+    background: #4267B2;
+    border: none;
+    outline: none;
+}
+
+.facebook:hover{
+    background: #365697;
+    cursor: pointer;
+}
+
+.google{
+    background: #DD4B39;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.google:hover{
+    background: #c24332;
+    cursor: pointer;
+}*/

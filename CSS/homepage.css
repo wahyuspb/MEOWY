@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: 'montserrat';
+    background: rgb(44, 124, 156);
+}
+
+.gambar-konten{
+    background: url(../Gambar/home.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.overlay{
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    box-shadow: inset 380px 280px 500px rgba(0, 0, 0, .7);  
+}
+
+.heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'montserrat';
+    font-size: 85px;
+    color: #fff;
+    margin: auto 120px;
+    line-height: 75px;
+    overflow: hidden;
+}
+
+.para{
+    color: #fff;
+    font-family: 'montserrat';
+    margin: auto 120px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.cover{
+    color: #fff;
+    margin: auto 120px;
+    padding: 14px 40px;
+    border: 2px solid;
+    border-radius: 80px;
+    width: 280px;
+    background: rgba(0, 0, 0, .29);
+    text-align: center;
+}
+
+.cover a{
+    font-size: 18px;
+}
+
+.cover:hover{
+    background: #ACA533;
+    border: 2px solid#ACA533;
+    cursor: pointer;
+}
+
+.pos{
+    padding-top: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.row::after{
+    content: "";
+    display: table;
+}
+
+.row{
+    bacground: rgb(44, 124, 156);
+    width: 100%;
+    height: 500px;
+}
+
+.kolom1{
+    width: 30%;
+    text-align: left;
+    color: #fff;
+    float: left;
+    padding-left: 47px;
+    margin: 80px 80px;
+    height: 300px;
+}
+
+.kolom1 h3{
+    font-weight: bold;
+    line-height: 18px;
+    font-size: 20px;
+}
+
+.kolom1 h2{
+    font-weight: bold;
+    font-size: 38px;
+}
+
+
+.kolom2{
+    width: 30%;
+    text-align: center;
+    padding: 80px;
+    color: #fff;
+    float: left;
+    height: 500px;
+}
+
+.card{
+    background: rgb(32, 94, 119);
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.card h2{
+    margin-top: 10px;
+}
+
+.card img{
+    width: 200px;
+    height: 40%;
+}
+
+.card p{
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+
+.kolom2 img{
+    width: 180px;
+}
+
+.kolom2 button{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 10px;
+    margin: 45px auto;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    width: 200px;
+    background: #8b872a;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.kolom2 button:hover{
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #96922d;
+}
+
+.kolom3{
+    width: 280px;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+    float: left;
+    height: 500px;
+}
+
+.kolom3 img{
+    width: 180px;
+    height: 160px;
+}
+
+.kolom3 button{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 10px;
+    margin: 45px auto;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    width: 200px;
+    background: #8b872a;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.kolom3 button:hover{
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #96922d;
+}
+
+

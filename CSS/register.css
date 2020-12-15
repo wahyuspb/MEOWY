@@ -1,0 +1,88 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.65;
+}
+
+.main-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.left-content {
+    flex: 2;
+}
+
+.text{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.right-content {
+    display: flex;
+    flex: 3;
+    background: #e9e9e9;
+    justify-content: center;
+}
+
+.name{
+    display: flex;
+}
+
+.fname,.lname{
+    width: 96%;
+    padding: 10px 10px;
+    margin-right: 65px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.register{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+.uname,.password{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.Already{
+    margin-top: 10%;
+    width: 60%;
+    padding: 8px;
+    outline: none;
+}
+
+.bawah{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
