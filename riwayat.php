@@ -21,7 +21,7 @@ require_once("koneksi.php");
          <div class=list>
             <center>
                <h2>Halo</h2>
-               <h2><?php echo $session_firstname . $session_lastname; ?></h2>
+               <h2><a href="profile.php"><?php echo $session_firstname ." " .$session_lastname; ?></a></h2>
                <div class="button">
                <a href="welcome.php"><button class="diagnosa">Diagnosa</button></a><br>
                   <button class="riwayat">Riwayat</button></a><br>
