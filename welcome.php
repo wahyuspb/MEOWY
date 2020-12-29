@@ -134,6 +134,7 @@ if (isset($_POST["selesai"])) {
          <button type="submit" class="submit" name="selesai">SELESAI</button>
       </form>
       <?php 
+      if(isset($_POST['selesai'])){
          $tampil = "SELECT user.username, penyakit.penyakit, diagnosa.date from diagnosa JOIN user ON diagnosa.id_user = user.id_user 
          join penyakit on diagnosa.id_penyakit = penyakit.id_penyakit WHERE diagnosa.id_user = '$user_check' 
          and diagnosa.id_diagnosa = '$id'";
@@ -153,7 +154,7 @@ if (isset($_POST["selesai"])) {
             <td><?php echo $record['date'];?></td>
          </tr>
       </table>
-     <?php } ?>
+     <?php } }?>
       </center>
       </div>
 
