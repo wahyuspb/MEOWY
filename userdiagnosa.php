@@ -58,7 +58,7 @@ if (isset($_POST["selesai"])) {
             <div class=list>
                 <center>
                     <h2>Halo</h2>
-                    <h2><?php echo $session_firstname . $session_lastname; ?></h2>
+                    <a href="profile.php"><h2><?php echo $session_firstname . $session_lastname; ?></h2></a>
                     <div class="button">
                         <button class="diagnosa">Diagnosa</button><br>
                         <button class="riwayat">Riwayat</button><br>
