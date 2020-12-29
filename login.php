@@ -13,16 +13,9 @@
         <div class="left-content">
             <div class="text">
                 <h1>MEOWY</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Enim obcaecati iste eaque neque atque illo vero earum nesciunt 
-                    perspiciatis hic sint pariatur dolor eos assumenda accusantium quia tempora, 
-                    dignissimos eius numquam temporibus fuga suscipit. A, esse! Nulla ipsam cumque maxime, 
-                    alias sunt cupiditate, accusamus animi autem sequi aspernatur voluptatibus expedita nisi 
-                    inventore aut in vitae sit officia, at nemo ad.</p>
+                <p>At Fetch! Pet Care we believe in a safe and happy world where pets get their way every day. This means enabling your pet to live life to its fullest. So even if you’re away, with Fetch! Pet Care, your pet can still play! We believe a pet needs regular exercise in order to be happy and healthy, so we have designed a range of services to meet the varied needs of dogs and cats.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptates optio, modi, nisi omnis, 
-                    et expedita facere perferendis quas veniam tenetur maiores beatae nihil ducimus reiciendis in itaque 
-                    aliquid adipisci!</p>
+         
             </div>
         </div>
 
