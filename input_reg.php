@@ -26,7 +26,6 @@ if (isset($_POST["register"])) {
         $row[] = $ambil;
     }
     
-    
     if($count == 0){
         $id = "USER-001";
     }else{

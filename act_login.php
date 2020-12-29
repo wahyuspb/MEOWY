@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
     if ($count == 1) {
         $_SESSION['login_user'] = $row["id_user"];
 
-        header("location: userdiagnosa.php");
+        header("location: welcome.php");
     } else {
         $error = "Username atau Password tidak cocok";
     }

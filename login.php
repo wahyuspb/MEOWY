@@ -39,7 +39,7 @@
                     <label for="pass">Password</label>
                     <input name="pass" id="pass" class="password" type="password" placeholder="Your Password..."></input>
                     <button class="Login" name="login">Log In</button>
-                    <a href="register.php"><button class="Signup">Sign Up</button></a>
+                    <button class="Signup"><a href="register.php">Sign Up</a></button>
                 </center>
             </div>
             </form>

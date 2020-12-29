@@ -15,34 +15,71 @@ while ($ambil = mysqli_fetch_assoc($query)) {
 
 if (isset($_POST["selesai"])) {
    $G = $_POST["pertanyaan"]; 
+   $id;
+   $select_u = "Select id_diagnosa from diagnosa";
+   $query1 = mysqli_query($con, $select_u);
+   $count = mysqli_num_rows($query1);
+   $date = date('Y/m/d');
+   $row1 = [];
+   while ($ambil1 = mysqli_fetch_assoc($query1)){
+        $row1[] = $ambil1;
+    }
+
+   if($count == 0){
+      $id = "DIAG-001";
+  }else{
+      $idtemp = end($row1);
+      $idtemp = explode("-", $idtemp["id_diagnosa"]);
+      $int = (int)$idtemp[1]+1;
+      $prefix = sprintf("%'03d", $int);
+      $idtemp[1] = $prefix;
+      $idtemp = implode("-", $idtemp);
+      $id = $idtemp; 
+  }   
+
+
    if ($G[1] and $G[2] and $G[3] and $G[4] and $G[5] and $G[6]) {
-      echo "PANLEUKOPENIA <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P001', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[7]) {
-      echo "VIRAL RHINOTRACEITIS <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P003', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[8] and $G[9] and $G[10] and $G[11] and $G[12]) {
-      echo "CALCIVIRUS <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P004', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[13] and $G[14]) {
-      echo "CHLAMYDIOSIS <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P005', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[15] and $G[16] and $G[17] and $G[18]) {
-      echo "RABIES <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P002', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[19] and $G[20] and $G[21]) {
-      echo "KENCING BATU <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P006', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[31] and $G[32]) {
-      echo "AMBIEN <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P011', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[33] and $G[34] and $G[35] and $G[36] and $G[37]) {
-      echo "TUMOR <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P012', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[1] and $G[2] and $G[39] and $G[40]) {
-      echo "OTITIS <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P014', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[29] and $G[2] and $G[26] and $G[27] and $G[28]) {
-      echo "ASETIS <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P009', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[2] and $G[29] and $G[30]) {
-      echo "INFEKSI RAHIM <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P010', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[2] and $G[38]) {
-      echo "HALITOSIS <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P013', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[22] and $G[23] and $G[24]) {
-      echo "JAMUR PADA KUCING <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P007', '$date')";
+      mysqli_query($con, $insert);
    } elseif ($G[22] and $G[23]) {
-      echo "SCABIES <br>";
+      $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P008', '$date')";
+      mysqli_query($con, $insert);
    }
 }
 ?>
@@ -96,6 +133,15 @@ if (isset($_POST["selesai"])) {
          </div>
          <button type="submit" class="submit" name="selesai">SELESAI</button>
       </form>
+      <?php if(isset($_POST["selesai"])){ ?>
+      <table>
+         <tr>
+            <th>Hasil Diagnosa</th>
+            <th>Nama Pengguna</th>
+            <th>Waktu Diagnosa</th>
+         </tr>
+      </table>
+     <?php } ?>
       </center>
       </div>
 
