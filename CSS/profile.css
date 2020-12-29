@@ -1,0 +1,101 @@
+*{transition: all 0.2s;}
+
+#View{
+  font-family: "Noto Sans";
+  width: 80%;
+  height:80%;
+  margin:0 auto;
+}
+
+#View > #Content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#View > #Content > #UserImg{
+  width:110px;
+  height:110px;
+  background-color:#CCC;
+  background-image: url(https://p-store.net/images/membersprofilepic/50182.png?1609075609);
+  background-size: cover;
+  border-radius:100%;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+#View > #Content > h3#Title{
+  font-size: 21px;
+  margin-bottom:8px;
+}
+
+#View > #Content > h3#Title > strong{
+  font-weight:bold;
+}
+
+#View > #Content > nav{
+  font-size:18px;
+  margin-bottom: 12px;
+}
+
+#View > #Content > nav > a{
+  color: #666;
+  text-decoration: none;
+}
+
+#View > #Content > nav > a:nth-child(2){
+  font-weight:bold;
+  color: #E71212;
+}
+
+#View > #Content > nav > a:nth-child(2):before{
+  content: " | ";
+  color: #CCC;
+}
+
+.HR{
+  width: 100%;
+  clear:both;
+  display: block;
+  border-top: 1px solid #EAEAEA;
+  margin: 20px 0;
+}
+
+#View > #Content > menu{
+  width:90%;
+  margin:0 auto;
+}
+
+#View > #Content > menu > ul > li{
+  text-align:left;
+  display:flex;
+  border:1px solid #EAEAEA;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 90%;
+  margin-bottom: 8px;
+}
+
+#View > #Content > menu > ul > li:active{
+  box-shadow: 0 0 14px #EAEAEA inset;
+  border-color: #CCC;
+}
+
+#View > #Content > menu > ul > li > #Content{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#View > #Content > menu > ul > li > #Content > h4{
+  font-size: 20px;
+  color: #444;
+}
+
+#View > #Content > menu > ul > li > #Content > span{
+  font-size: 16px;
+  color: #666;
+}
