@@ -4,11 +4,13 @@
    
    $user_check = $_SESSION['login_user'];
    
-   $sql = mysqli_query($con, "SELECT username from user where username = '$user_check'");
+   $sql = mysqli_query($con, "SELECT first_name, last_name from user where id_user = '$user_check'");
    
-   $row = mysqli_fetch_array($sql,MYSQLI_ASSOC);
+   $row = mysqli_fetch_assoc($sql);   
+   $session_firstname = $row['first_name'];
+   $session_lastname = $row['last_name'];
    
-   $login_session = $row['username'];
+ 
    
    if(!isset($_SESSION['login_user'])){
       header("location:login.php");

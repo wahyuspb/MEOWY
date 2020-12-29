@@ -27,6 +27,7 @@
             <div class="content">
                 <center>
                     <h1>Sign Up For New Account</h1>
+                    <img src="Gambar/meowy.png">
                 </center>
                 <form action="input_reg.php" method="post">
                 <div class="name">
@@ -47,5 +48,4 @@
         </div>
     </div>
 </body>
-
 </html>

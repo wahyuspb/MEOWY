@@ -10,17 +10,18 @@ if (isset($_POST['login'])) {
     $user = mysqli_real_escape_string($con, $_POST['user']);
     $pass = mysqli_real_escape_string($con, $_POST['pass']);
 
-    $sql = "SELECT username from user where username = '$user' and password = '$pass'";
+    $sql = "SELECT id_user from user where username = '$user' and password = '$pass'";
     $result = mysqli_query($con, $sql);
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $row = mysqli_fetch_assoc($result);
     $active = $row['active'];
-
+    // var_dump($row);
+    // die;
     $count = mysqli_num_rows($result);
 
     if ($count == 1) {
-        $_SESSION['login_user'] = $user;
+        $_SESSION['login_user'] = $row["id_user"];
 
-        header("location: welcome.php");
+        header("location: userdiagnosa.php");
     } else {
         $error = "Username atau Password tidak cocok";
     }

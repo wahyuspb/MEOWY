@@ -22,10 +22,12 @@ nav.active{
 }
 
 .logo{
+    float: left;
     margin-left: 130px;
-    width: 70px;
+    width: 60px;
     transition: .5s all;
-    margin-top: 3px;
+    margin-top: 10px;
+    border-radius: 50%;
 }
 
 .logo.active{
@@ -47,7 +49,6 @@ nav ul{
 }
 
 nav ul.active{
-    float: right;
     margin-right: 50px;
     margin-top: 0px;
     transition: all .5s;
@@ -108,28 +109,6 @@ nav ul li{
     margin-left: .25em;
 }
 
-.modal-content input{
-    display: inline-block;
-    font-family: 'Montserrat';
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    text-align: left;
-    font-size: 15px;
-    border-radius: 5px;
-    border: #c0c0c0 1px solid;
-    color: #000;
-    margin: 10px auto;
-    outline: 0;
-}
-
-.modal-content img{
-    display: block;
-    width: 200px;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .selanjutnya{
     font-family: 'Montserrat';
@@ -142,10 +121,6 @@ nav ul li{
     color: white;
     background: #B5AB16;
     font-size: 20px;
-}
-
-.modal-content a{
-    color: white;
 }
 
 .selanjutnya:hover{

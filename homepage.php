@@ -41,24 +41,25 @@
             <h2>Diagnose a cat disease</h2><br>
             <p>Kami Berinisiatif untuk menciptakan <br>
                 suatu platform berisi informasi yang <br>
-                dibutuhkan oleh para pecinta hewan  <br>
+                dibutuhkan oleh para pecinta hewan <br>
                 peliharaan di seluruh Indonesia</p><br>
 
         </div>
 
         <div class="kolom2">
-            <div class="card">  
-                    <h2>GRATIS</h2>
-                    <img src="Gambar/free.png">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi labore ducimus eaque praesentium rem molestias quia laborum! Maxime, maiores tempora suscipit quaerat non pariatur vitae porro magnam dolorem placeat!</p>
+            <div class="card">
+                <h2>GRATIS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi labore ducimus eaque praesentium rem molestias quia laborum! Maxime, maiores tempora suscipit quaerat non pariatur vitae porro magnam dolorem placeat!</p>
+                <img src="Gambar/free.png">
             </div>
         </div>
 
         <div class="kolom3">
-            <div class="card">  
+            <div class="card">
                 <h2>AKSES PENUH</h2>
-                <img src="Gambar/full.png">
+
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quidem numquam quis aperiam optio labore quos quam dolor veritatis? Iste!
+                    <img src="Gambar/full.png">
             </div>
         </div>
     </div>
@@ -67,7 +68,7 @@
     <div class="start"><br>
         <h2>Bergabung Dengan Kami dan Dapatkan Akses Penuh Gratis</h2><br>
         <p>Kita menyediakan fitur gratis agar user bisa dengan mudah melakukan diagnosa kepada hewan peliharaan
-            dan user yang telah bergabung dapat memberikan response terhadap fitur yang kami sediakan 
+            dan user yang telah bergabung dapat memberikan response terhadap fitur yang kami sediakan
             agar nantinya dapat menciptakan inovasi yang lebih baik lagi</p><br>
         <a href="register.php"><button>Join Sekarang</button></a>
     </div>
@@ -75,9 +76,9 @@
     <div class="foo">
         <div class="con1">
             <h2>About Us</h2><br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi eaque dolor, 
-                culpa ab saepe nostrum? Similique, quod illum. Dolores at repellendus blanditiis unde quas quia modi nam sunt voluptatum, 
-                niet quaerat facilis ad, mollitia voluptates voluptatem alias cupiditate porro esse amet nemo assumenda. Nihil autem voluptas 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi eaque dolor,
+                culpa ab saepe nostrum? Similique, quod illum. Dolores at repellendus blanditiis unde quas quia modi nam sunt voluptatum,
+                niet quaerat facilis ad, mollitia voluptates voluptatem alias cupiditate porro esse amet nemo assumenda. Nihil autem voluptas
                 eveniet exercitationem! Est impedit nisi dolores maiores aspernatur, at ex ipsum corrupti neque.
             </p><br>
 
@@ -89,20 +90,20 @@
 
         </div>
 
-    <div class="con3">
-        <h2>Headquarter</h2><br>
-        <img src="https://www.hoshizora.org/images/hzheadquarters.png">
+        <div class="con3">
+            <h2>Headquarter</h2><br>
+            <img src="https://www.hoshizora.org/images/hzheadquarters.png">
+        </div>
     </div>
-</div>
 
     <div class="footer">
         <div class="foot">
-        <img src="./FooterIcon/facebook.png">
-        <img src="./FooterIcon/instagram.png">
-        <img src="./FooterIcon/linkedin.png"><br>
-        
-        <p>MEOWY &copy; 2020 | All rights reserved</p>   
-        </div>   
+            <img src="./FooterIcon/facebook.png">
+            <img src="./FooterIcon/instagram.png">
+            <img src="./FooterIcon/linkedin.png"><br>
+
+            <p>MEOWY &copy; 2020 | All rights reserved</p>
+        </div>
     </div>
 
 
