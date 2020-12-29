@@ -13,10 +13,7 @@
         <div class="left-content">
             <div class="text">
                 <h1>INFORMATION</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Autem quod consequuntur in deleniti quidem labore quam perspiciatis laudantium nihil ea repellat,
-                    aliquam cumque fugiat rerum minima dolores soluta suscipit nesciunt odio, eum excepturi saepe reiciendis?
-                    Eius similique ipsam facere id.</p>
+                <p>At Fetch! Pet Care we believe in a safe and happy world where pets get their way every day. This means enabling your pet to live life to its fullest. So even if you’re away, with Fetch! Pet Care, your pet can still play! We believe a pet needs regular exercise in order to be happy and healthy, so we have designed a range of services to meet the varied needs of dogs and cats.</p>
                 <center>
                     <a href="login.php"><button class="Already">Already have an account?</button></a>
                 </center>
