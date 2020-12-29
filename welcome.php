@@ -16,10 +16,10 @@ while ($ambil = mysqli_fetch_assoc($query)) {
 if (isset($_POST["selesai"])) {
    $G = $_POST["pertanyaan"]; 
    $id;
+   $date = date('Y/m/d');
    $select_u = "Select id_diagnosa from diagnosa";
    $query1 = mysqli_query($con, $select_u);
    $count = mysqli_num_rows($query1);
-   $date = date('Y/m/d');
    $row1 = [];
    while ($ambil1 = mysqli_fetch_assoc($query1)){
         $row1[] = $ambil1;
@@ -41,45 +41,196 @@ if (isset($_POST["selesai"])) {
    if ($G[1] and $G[2] and $G[3] and $G[4] and $G[5] and $G[6]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P001', '$date')";
       mysqli_query($con, $insert);
+
+      
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G003')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G004')";
+      mysqli_query($con, $insert5);
+      $insert6 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G005')";
+      mysqli_query($con, $insert6);
+      $insert7 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G006')";
+      mysqli_query($con, $insert7);
+      
+
    } elseif ($G[1] and $G[2] and $G[7]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P003', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G007')";
+      mysqli_query($con, $insert4);
+
    } elseif ($G[1] and $G[2] and $G[8] and $G[9] and $G[10] and $G[11] and $G[12]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P004', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G008')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G009')";
+      mysqli_query($con, $insert5);
+      $insert6 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G010')";
+      mysqli_query($con, $insert6);
+      $insert7 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G011')";
+      mysqli_query($con, $insert7);
+      $insert8 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G012')";
+      mysqli_query($con, $insert8);
+
    } elseif ($G[1] and $G[2] and $G[13] and $G[14]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P005', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G013')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G014')";
+      mysqli_query($con, $insert5);
+
    } elseif ($G[1] and $G[2] and $G[15] and $G[16] and $G[17] and $G[18]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P002', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G015')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G016')";
+      mysqli_query($con, $insert5);
+      $insert6 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G017')";
+      mysqli_query($con, $insert6);
+      $insert7 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G018')";
+      mysqli_query($con, $insert7);
+
    } elseif ($G[1] and $G[2] and $G[19] and $G[20] and $G[21]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P006', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G019')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G020')";
+      mysqli_query($con, $insert5);
+      $insert6 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G021')";
+      mysqli_query($con, $insert6);
+
    } elseif ($G[1] and $G[2] and $G[31] and $G[32]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P011', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G031')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G032')";
+      mysqli_query($con, $insert5);
+
    } elseif ($G[1] and $G[2] and $G[33] and $G[34] and $G[35] and $G[36] and $G[37]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P012', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G033')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G034')";
+      mysqli_query($con, $insert5);
+      $insert6 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G035')";
+      mysqli_query($con, $insert6);
+      $insert7 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G036')";
+      mysqli_query($con, $insert7);
+      $insert8 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G037')";
+      mysqli_query($con, $insert8);
+
    } elseif ($G[1] and $G[2] and $G[39] and $G[40]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P014', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G001')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G039')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G040')";
+      mysqli_query($con, $insert5);
+
    } elseif ($G[29] and $G[2] and $G[26] and $G[27] and $G[28]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P009', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G029')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G026')";
+      mysqli_query($con, $insert4);
+      $insert5 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G027')";
+      mysqli_query($con, $insert5);
+      $insert6 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G028')";
+      mysqli_query($con, $insert6);
+
    } elseif ($G[2] and $G[29] and $G[30]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P010', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G029')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G030')";
+      mysqli_query($con, $insert4);
+
    } elseif ($G[2] and $G[38]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P013', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G002')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G038')";
+      mysqli_query($con, $insert3);
+
    } elseif ($G[22] and $G[23] and $G[24]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P007', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G022')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G023')";
+      mysqli_query($con, $insert3);
+      $insert4 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G024')";
+      mysqli_query($con, $insert4);
+
    } elseif ($G[22] and $G[23]) {
       $insert = "INSERT INTO diagnosa VALUES ('$id', '$user_check', 'P008', '$date')";
       mysqli_query($con, $insert);
+
+      $insert2 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G022')";
+      mysqli_query($con, $insert2);
+      $insert3 = "INSERT INTO `detail_diagnosa`(`id_diagnosa`, `id_gejala`) VALUES ('$id','G023')";
+      mysqli_query($con, $insert3);
    }
 }
 ?>
@@ -104,7 +255,7 @@ if (isset($_POST["selesai"])) {
                <h2><?php echo $session_firstname . $session_lastname; ?></h2>
                <div class="button">
                   <button class="diagnosa">Diagnosa</button><br>
-                  <button class="riwayat">Riwayat</button><br>
+                  <a href="riwayat.php"><button class="riwayat">Riwayat</button></a><br>
                   <button class="penyakit">Penyakit</button><br>
                   <form action="act_logout.php">
                      <input type="submit" value="Keluar" class="keluar"></input>
