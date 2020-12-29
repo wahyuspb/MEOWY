@@ -49,7 +49,7 @@
         <div class="kolom2">
             <div class="card">
                 <h2>GRATIS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi labore ducimus eaque praesentium rem molestias quia laborum! Maxime, maiores tempora suscipit quaerat non pariatur vitae porro magnam dolorem placeat!</p>
+                <p>Daaptkan diagnosa penyakit secara gratis, pengganti Dokter Hewan</p>
                 <img src="Gambar/free.png">
             </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="card">
                 <h2>AKSES PENUH</h2>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quidem numquam quis aperiam optio labore quos quam dolor veritatis? Iste!
+                <p>Anda dapat akses penuh kedalam semua fitur premium kami </p>
                     <img src="Gambar/full.png">
             </div>
         </div>
@@ -76,10 +76,7 @@
     <div class="foo">
         <div class="con1">
             <h2>About Us</h2><br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi eaque dolor,
-                culpa ab saepe nostrum? Similique, quod illum. Dolores at repellendus blanditiis unde quas quia modi nam sunt voluptatum,
-                niet quaerat facilis ad, mollitia voluptates voluptatem alias cupiditate porro esse amet nemo assumenda. Nihil autem voluptas
-                eveniet exercitationem! Est impedit nisi dolores maiores aspernatur, at ex ipsum corrupti neque.
+            <p>MEOWY! Pet Care we believe in a safe and happy world where pets get their way every day. This means enabling your pet to live life to its fullest. So even if you’re away, with Fetch! Pet Care, your pet can still play! We believe a pet needs regular exercise in order to be happy and healthy, so we have designed a range of services to meet the varied needs of dogs and cats.
             </p><br>
 
             <p style="font-style: italic;">"From Us To Us"</p>
