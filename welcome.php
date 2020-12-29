@@ -256,7 +256,6 @@ if (isset($_POST["selesai"])) {
                <div class="button">
                   <button class="diagnosa">Diagnosa</button><br>
                   <a href="riwayat.php"><button class="riwayat">Riwayat</button></a><br>
-                  <button class="penyakit">Penyakit</button><br>
                   <form action="act_logout.php">
                      <input type="submit" value="Keluar" class="keluar"></input>
                   </form>

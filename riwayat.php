@@ -25,9 +25,8 @@ require_once("koneksi.php");
                <div class="button">
                <a href="welcome.php"><button class="diagnosa">Diagnosa</button></a><br>
                   <button class="riwayat">Riwayat</button></a><br>
-                  <button class="penyakit">Penyakit</button><br>
                   <form action="act_logout.php">
-                     <input type="submit" value="Keluar" class="keluar"></input>
+                  <input type="submit" value="Keluar" class="keluar"></input>
                   </form>
                </div>
             </center>
@@ -35,32 +34,32 @@ require_once("koneksi.php");
       </div>
 
       <div class="kanan">
-        <?php 
-        if(isset($_POST['selesai'])){
-           $tampil = "SELECT user.username, penyakit.penyakit, penyakit.penanganan, diagnosa.date from diagnosa JOIN user ON diagnosa.id_user = user.id_user 
-           join penyakit on diagnosa.id_penyakit = penyakit.id_penyakit WHERE diagnosa.id_user = '$user_check' 
-           and diagnosa.id_diagnosa = '$id'";
-           $q = mysqli_query($con, $tampil);
-  
-           while ($record = mysqli_fetch_array($q)) {
-           ?>
-        <table>
+      <table>
            <tr>
-              <th>Hasil Diagnosa</th>
+              <th>Diagnosa</th>
               <th>Nama Pengguna</th>
-              <th>Penanganan</th>
               <th>Waktu Diagnosa</th>
            </tr>
+        <?php 
+        $tampil = "SELECT user.username, penyakit.penyakit, diagnosa.date from diagnosa JOIN user ON 
+         diagnosa.id_user = user.id_user join penyakit on diagnosa.id_penyakit = penyakit.id_penyakit WHERE 
+         diagnosa.id_user = '$user_check' LIMIT 10";
+         $q = mysqli_query($con, $tampil);
+        
+         while ($record = mysqli_fetch_array($q)) {
+        ?>
+
+        
            <tr>
               <td><?php echo $record['penyakit'];?></td>
               <td><?php echo $record['username'];?></td>
-              <td><?php echo $record['penanganan'];?></td>
               <td><?php echo $record['date'];?></td>
            </tr>
-        </table>
-       <?php } }?>
-        ?>
+        
+       <?php } ?>
+       </table> 
 
       </div>
 
 </body>
+</html>
