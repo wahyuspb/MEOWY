@@ -286,13 +286,14 @@ if (isset($_POST["selesai"])) {
       </form>
       <?php 
       if(isset($_POST['selesai'])){
-         $tampil = "SELECT user.username, penyakit.penyakit, penyakit.penanganan, diagnosa.date from diagnosa JOIN user ON diagnosa.id_user = user.id_user 
-         join penyakit on diagnosa.id_penyakit = penyakit.id_penyakit WHERE diagnosa.id_user = '$user_check' 
-         and diagnosa.id_diagnosa = '$id'";
+         $tampil = "SELECT user.username, penyakit.penyakit, penyakit.penanganan, diagnosa.date from diagnosa JOIN user ON 
+         diagnosa.id_user = user.id_user join penyakit on diagnosa.id_penyakit = penyakit.id_penyakit WHERE 
+         diagnosa.id_user = '$user_check' and diagnosa.id_diagnosa = '$id'";
          $q = mysqli_query($con, $tampil);
 
          while ($record = mysqli_fetch_array($q)) {
          ?>
+
       <table>
          <tr>
             <th>Hasil Diagnosa</th>
@@ -306,10 +307,33 @@ if (isset($_POST["selesai"])) {
             <td><?php echo $record['penanganan'];?></td>
             <td><?php echo $record['date'];?></td>
          </tr>
+      </table><br>
+
+      <?php
+      $tampil_g = "SELECT gejala.gejala from gejala join detail_diagnosa on gejala.id_gejala = detail_diagnosa.id_gejala 
+         join diagnosa on detail_diagnosa.id_diagnosa = diagnosa.id_diagnosa where diagnosa.id_diagnosa = '$id'";
+         $g = mysqli_query($con, $tampil_g); ?>
+      
+      <table>
+         <tr>
+            <th>No</th>
+            <th>Gejala Terpilih</th>
+         </tr>
+
+      <?php
+         $i = 1;
+         while ($record1 = mysqli_fetch_array($g)){ 
+            ?>
+         <tr>
+            <td><?php echo $i++?></td>
+            <td><?php echo $record1['gejala'];?></td>
+         </tr>
+         <?php } ?>
       </table>
+
      <?php } }?>
       </center>
-      </div>
+      </div><br>
 
 </body>
 <script>

@@ -36,7 +36,29 @@ require_once("koneksi.php");
 
       <div class="kanan">
         <?php 
-        
+        if(isset($_POST['selesai'])){
+           $tampil = "SELECT user.username, penyakit.penyakit, penyakit.penanganan, diagnosa.date from diagnosa JOIN user ON diagnosa.id_user = user.id_user 
+           join penyakit on diagnosa.id_penyakit = penyakit.id_penyakit WHERE diagnosa.id_user = '$user_check' 
+           and diagnosa.id_diagnosa = '$id'";
+           $q = mysqli_query($con, $tampil);
+  
+           while ($record = mysqli_fetch_array($q)) {
+           ?>
+        <table>
+           <tr>
+              <th>Hasil Diagnosa</th>
+              <th>Nama Pengguna</th>
+              <th>Penanganan</th>
+              <th>Waktu Diagnosa</th>
+           </tr>
+           <tr>
+              <td><?php echo $record['penyakit'];?></td>
+              <td><?php echo $record['username'];?></td>
+              <td><?php echo $record['penanganan'];?></td>
+              <td><?php echo $record['date'];?></td>
+           </tr>
+        </table>
+       <?php } }?>
         ?>
 
       </div>
